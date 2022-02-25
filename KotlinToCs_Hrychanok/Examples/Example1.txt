@@ -1,0 +1,18 @@
+var a = readNum();
+var c = readNum()
+  c = 15
+  var b = 1
+  println((a + b)*c)
+  if(a > b) {
+      println("error")
+  }
+  else if ("asd" == readLine()) {
+      println(pow(c, 3))
+  }
+  else {
+      while(a < c) {
+      a = a + b;
+      println(a);
+      println(pow(c, a))
+  }
+}

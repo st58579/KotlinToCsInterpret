@@ -1,0 +1,25 @@
+println("Do you want to play a game? Type yes to confirm.")
+while(readLine() == "yes") {
+    println("Enter cap for generated number : ");
+    Double cap = readNum();
+    var count = 10;
+    var n = rand(cap);
+    println("Guess number between 0 and ", cap);
+    println(n);
+    do {
+	var guess = readNum();
+        if(guess == n) {
+            println("Congrats! Want to play another game? Type yes to confirm.")
+        } else if(guess < n){
+            println("Number is bigger.");
+            count = count - 1
+        } else if(guess > n){
+            println("Number is less.");
+            count = count - 1
+        };
+	if(count == -1) {
+            guess = n;
+	    println("You lose. Want to play another game? Type yes to confirm.")
+	}
+    } while(guess != n)
+}

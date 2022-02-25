@@ -1,0 +1,22 @@
+println("Zadejte cislo a")
+Double a = readNum()
+println("Zadejte cislo b")
+Double b = readNum()
+println("Zadejte cislo c")
+Double c = readNum()
+Double d = pow(b,2) - 4*a*c
+Double sd = sqrt(d)
+	if(sd > 0) {
+		var x1 = (-b + sd)/(2*a);
+		var x2 = (-b - sd)/(2*a);
+		print("X1 is ");
+		println(x1);
+		print("X2 is ");
+		println(x2)
+	} else if(sd == 0){
+		var x = (-b + sd)/(2*a);
+		print("X is ");
+		println(x)
+	} else {
+		println("Equation can not be solved due to D less then 0")
+	}
